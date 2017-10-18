@@ -1,4 +1,4 @@
-var Startup = /** @class */ (function () {
+var Startup = (function () {
     function Startup() {
     }
     Startup.main = function () {
