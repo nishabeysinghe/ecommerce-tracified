@@ -3,3 +3,4 @@ function greeter(person) {
 }
 var user = "jane";
 console.log(greeter(user));
+//# sourceMappingURL=hello.js.map

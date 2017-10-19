@@ -1,1 +1,1 @@
-{"version":3,"file":"PluginManager.js","sourceRoot":"","sources":["PluginManager.ts"],"names":[],"mappings":"AAAA;IAAA;IAKA,CAAC;IAJiB,kBAAI,GAAlB;QACI,OAAO,CAAC,GAAG,CAAC,gBAAgB,CAAC,CAAC;QAC9B,MAAM,CAAC,CAAC,CAAC;IACb,CAAC;IACL,oBAAC;AAAD,CAAC,AALD,IAKC;AAED,OAAO,CAAC,IAAI,EAAE,CAAC"}
+{"version":3,"file":"PluginManager.js","sourceRoot":"","sources":["PluginManager.ts"],"names":[],"mappings":"AAAA;IAAA;IAKA,CAAC;IAJiB,kBAAI,GAAlB;QACI,OAAO,CAAC,GAAG,CAAC,eAAe,CAAC,CAAC;QAC7B,MAAM,CAAC,CAAC,CAAC;IACb,CAAC;IACL,oBAAC;AAAD,CAAC,AALD,IAKC;AAED,OAAO,CAAC,IAAI,EAAE,CAAC"}

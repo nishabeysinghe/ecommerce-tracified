@@ -4,6 +4,8 @@ function greeter(person: String) {
 
 }
 
+ // tslint:disable-next-line:no-var-keyword
  var user = "jane";
 
+// tslint:disable-next-line:eofline
 console.log(greeter(user) );

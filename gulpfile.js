@@ -15,7 +15,38 @@ var gulp        = require("gulp"),
     mocha       = require("gulp-mocha"),
     istanbul    = require("gulp-istanbul"),
     browserSync = require('browser-sync').create();
+    merge = require('merge2');
+    sass = require('gulp-sass');
+
+//script
+gulp.task('scripts', function() {
+    var tsResult = gulp.src('*.ts')
+      .pipe(ts({
+          declarationFiles: true,
+          noExternalResolve: true,
+          noImplicitAny: true,
+          out: 'main.js'
+        }));
+        return merge([
+            tsResult.dts.pipe(gulp.dest('release/definitions')),
+            tsResult.js.pipe(gulp.dest('release/js'))
+            ]);
+        });
     
+//saas
+
+gulp.task('sass', function () {
+    gulp.src('*.scss')
+      .pipe(sass.sync().on('error', sass.logError))
+      .pipe(gulp.dest('./css'));
+  });
+
+  //watch1
+  gulp.task('watch1', function () {
+    gulp.watch('*.scss', ['sass']);
+    gulp.watch('*.ts', ['scripts']);
+  });
+
 //******************************************************************************
 //* LINT
 //******************************************************************************
