@@ -1,25 +1,39 @@
 {
-    "version": "0.1.0",
-    "command": "gulp",
+	"version": "2.0.0",
+    "command": "tsc",
     "isShellCommand": true,
-    "args": [
-        "--no-color"
-    ],
-    "tasks": [
-		{
-			"taskName": "scripts",
-			"isBuildCommand": true,
-			"showOutput": "always"
-		},
-		{
-			"taskName": "sass",
-			"isBuildCommand": true,
-			"showOutput": "always"
-		},
-		{
-			"taskName": "watch1",
-			"isBuildCommand": true,
-			"showOutput": "always"
-		}
-	]
+    "args": [],
+    "showOutput": "always",
+    "tscCommand": true,
+    "suppressTaskName": true,
+
+
+"tasks": [
+	{
+		"type": "typescript",
+		"tsconfig": "tsconfig.json",
+		"option": "watch",
+		"problemMatcher": [
+			"$tsc-watch"
+		]
+	},
+	{
+		"taskName": "scripts",
+		"problemMatcher": [
+			"$gulp-tsc"
+		]
+	},
+	{
+		"taskName": "sass",
+		"problemMatcher": [
+			"$gulp-tsc"
+		]
+	},
+	{
+		"taskName": "watch1",
+		"problemMatcher": [
+			"$gulp-tsc"
+		]
+	}
+]
 }
