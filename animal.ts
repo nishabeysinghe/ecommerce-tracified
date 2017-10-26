@@ -5,7 +5,7 @@ class Animal {
 
     // tslint:disable-next-line:no-inferrable-types
     public move(meters: number = 0) {
-        alert(this.name + " moved " + meters + "m.");
+        alert(this.name + " moved along " + meters + "m.");
     }
 // tslint:disable-next-line:eofline
 }
